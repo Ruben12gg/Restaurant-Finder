@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tipos de Cozinha</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="btn-return">
+            
+            <button id="return" type="return">Voltar ao Home</button>
+
+        </div>
+        <div class="header">
+
+            <form action="">
+                <h1>Restaurant Search</h1>
+
+                <div class="form-box">
+                    <select id="sltCategories" class="form-control">
+                    </select>
+                    <select id="citySelector" class="form-control">
+                        <option value="311">Porto</option>
+                        <option value="82">Lisboa</option>
+                        <option value="11610">Algarve</option>
+                    </select>
+                    <button id="submit" class="search-btn" type="submit">Search</button>
+                    <button id="clearResults" class="clean-btn" type="button">Clean</button>
+                </div>
+            </form>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- secçao de resultados -->
+    <section id="restaurant-results">
+        <div>
+            <ul id="output"></ul>
+        </div>
+    </section>
+
+
+    <!-- botao voltar ao topo -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Voltar ao topo</button>
+
+
+
+    <script src="index_cuisines.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+
+
+</html>

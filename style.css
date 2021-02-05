@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    overflow-x: hidden ;
+}
+.header .content-box{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(food.jpg);
+    background-position: center;
+    background-size: cover;
+    width:100%;
+   
+}
+#logo{
+    width: 10%;
+    height: 10%;
+}
+.main{
+    background-color:rgba(255, 181, 120, 0.741);
+
+}
+.menu{
+    display: inline-flex;
+
+}
+.menu img{
+    height: 45px;
+    cursor: pointer;
+}
+.menu button {
+    padding:5px 20px;
+    background: #e62626;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+
+}
+
+.menu button .fa{
+    margin-right: 10px;
+}
+
+.banner-text{
+    width: 80%;
+    color: white;
+    margin:16% auto 0;
+    text-align: center;
+
+}
+
+.banner-text h2{
+    margin-top: 50px;
+    font-size: 64px;
+    color:#e62626
+}
+
+.banner-text p {
+    font-size: 20px;
+    margin:20px 0 50px;
+}
+
+.banner-text a {
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #e62626;
+    display: block;
+    padding: 10px;
+    width: 180px;
+    margin: auto;
+    background: #e62626;
+    transition: .5s;
+
+}
+.banner-text a:hover{
+    background: transparent;
+    color: #fff;
+    text-decoration:none;
+}
+
+/*Service*/
+
+.content-box{
+    background: rgba(204, 145, 96, 0.789);
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1::after{
+    content:'';
+    background: #e62626 ;
+    display: block;
+    height:3px;
+    width:170px;
+    margin:20px auto 50px;
+}
+.services .icon {
+   font-size: 30px;
+   margin:20px auto;
+   padding:18px;
+   height:70px;
+   width:70px;
+   border:1px solid #e62626;
+   border-radius: 50%;
+   color: #e62626;
+}
+.services{
+    display: inline-flex;
+    justify-content:center;
+}
+.services p{
+    font-size: 20px;
+    margin-top: 10px;
+    color:#fff;
+    padding:20px ;
+}
+
+.services span{
+    color:#e62626;
+    transition: .5s
+}
+
+.services .col-md-3:hover{
+    background:#b33a3a;
+    cursor:pointer;
+    color:#fff;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    transition: .5s;
+}
+.services .col-md-3:hover .icon{
+border:1px solid #fff;
+color:#fff;
+}
+.services .col-md-3:hover p{
+    color:#fff;
+    }
+.services .col-md-3:hover span{
+        color:#fff;
+        }
+
+/* ---Features--- */  
+
+.feature h2{
+    margin-top: 130px;
+
+}
+.feature h2::after{
+    content: '';
+    background: #b33a3a;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 50px;
+    position: absolute;
+    left: 17px;
+    
+
+}
+
+.feature ul{
+    margin-top: 30px;
+    margin-left: 50px;
+    list-style-type: none;
+
+}
+.feature ul li{
+    line-height: 40px;
+    font-size: 14px;
+    position: relative;
+
+}
+
+.feature ul li::after{
+    content: '';
+    height: 7px;
+    width: 7px;
+    background: #b33a3a;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 17px;
+    left: -25px;
+
+}
+
+.feature img{
+    margin-top: 130px;
+    
+}
+
+.img-fluid:hover{
+    width: 42%;
+    transition: .3s;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    
+}
+
+.footer h1{
+    padding-top: 50px;
+}
+
+.contact-form{
+    padding:15px;
+}
+
+.form-control{
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+::placeholder{
+    font-size: 12px;
+}
+
+.contact-form button{
+    border: none;
+    background: #b33a3a ;
+    box-shadow: none;
+    border-radius:0;
+}
+
+.contact-info .follow{
+    background-color: #fff;
+    padding: 8px;
+    margin: 15px;
+}
+
+.contact-info .fa{
+    margin: 10px;
+    font-size: 20px;
+    color:#b33a3a;
+    font-weight: bold;
+    padding-right: 20px ;
+
+}
+
+.contact-info .span{
+    font-size: 14px ;
+}
+
+.service, .feature, .footer{
+    margin-top: 15%;
+}
+
+/* ecras pequenos */
+@media screen and (max-width: 360px){
+ 
+   
+    .content-box{
+        height: 20%;
+    }
+   
+  }
+  
+  
+  
+  /* Ecras medios */
+  @media (max-width: 600px){
+    
+    .content-box{
+        height: 40%;
+    }
+   
+  
+  }
+  
+  
+  /* Ecras grandes */
+  @media (max-width: 992px){
+   
+   .content-box{
+       height: 40%;
+   }
+  }
+
+  @media (max-width: 1400px){
+   
+    .content-box{
+        height: 40%;
+    }
+   }
